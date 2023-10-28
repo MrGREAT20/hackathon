@@ -74,6 +74,7 @@ userTask[0].session1.push({
 });
 userTask[0].session2.push({
     "login" : {username: userTask[0].username, password : userTask[0].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[0].productId}, {"product_id" : data[11].productId}, {"product_id" : data[3].productId},{"product_id" : data[4].productId}, {"product_id" : data[5].productId},{"product_id" : data[12].productId},{"product_id" : data[13].productId}],
     "addtoCart" : [{"product_id" : data[0].productId}, {"product_id" : data[11].productId}, {"product_id" : data[3].productId},{"product_id" : data[4].productId}, {"product_id" : data[5].productId},{"product_id" : data[12].productId},{"product_id" : data[13].productId}], //do checkout as well
     "buyout" : false,
@@ -81,6 +82,7 @@ userTask[0].session2.push({
 });
 userTask[0].session3.push({
     "login" : {username: userTask[0].username, password : userTask[0].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[0].productId}, {"product_id" : data[11].productId}, {"product_id" : data[3].productId},{"product_id" : data[4].productId}, {"product_id" : data[5].productId},{"product_id" : data[12].productId},{"product_id" : data[13].productId}],
     "addtoCart" : [{"product_id" : data[0].productId}, {"product_id" : data[11].productId}, {"product_id" : data[3].productId},{"product_id" : data[4].productId}, {"product_id" : data[5].productId},{"product_id" : data[12].productId},{"product_id" : data[13].productId}], //do checkout as well
     "buyout" : true,
@@ -88,6 +90,7 @@ userTask[0].session3.push({
 });
 userTask[0].session4.push({
     "login" : {username: userTask[0].username, password : userTask[0].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[0].productId}, {"product_id" : data[11].productId}, {"product_id" : data[3].productId},{"product_id" : data[4].productId}, {"product_id" : data[5].productId},{"product_id" : data[12].productId},{"product_id" : data[13].productId}],
     "addtoCart" : [{"product_id" : data[0].productId}, {"product_id" : data[11].productId}, {"product_id" : data[3].productId},{"product_id" : data[4].productId}, {"product_id" : data[5].productId},{"product_id" : data[12].productId},{"product_id" : data[13].productId}], //do checkout as well
     "buyout" : false,
@@ -95,6 +98,7 @@ userTask[0].session4.push({
 });
 userTask[1].session1.push({
     "login" : {username: userTask[1].username, password : userTask[1].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[0].productId, "name" : data[0].name}],
     "addtoCart" : [{"product_id" : data[0].productId, "name" : data[0].name}], //do checkout as well
     "buyout" : true,
@@ -103,6 +107,7 @@ userTask[1].session1.push({
 
 userTask[1].session2.push({
     "login" : {username: userTask[1].username, password : userTask[1].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[3].productId, "name" : data[3].name},{"product_id" : data[5].productId, "name" : data[5].name}],
     "addtoCart" : [{"product_id" : data[5].productId, "name" : data[5].name}], //do checkout as well
     "buyout" : false,
@@ -111,6 +116,7 @@ userTask[1].session2.push({
 
 userTask[1].session3.push({
     "login" : {username: userTask[1].username, password : userTask[1].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[3].productId, "name" : data[3].name},{"product_id" : data[5].productId, "name" : data[5].name},{"product_id" : data[8].productId, "name" : data[8].name}],
     "addtoCart" : [{"product_id" : data[8].productId, "name" : data[8].name}], //do checkout as well
     "buyout" : false,
@@ -119,6 +125,7 @@ userTask[1].session3.push({
 
 userTask[1].session4.push({
     "login" : {username: userTask[1].username, password : userTask[1].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[1].productId, "name" : data[1].name},{"product_id" : data[4].productId, "name" : data[4].name},{"product_id" : data[1].productId, "name" : data[1].name}],
     "addtoCart" : [{"product_id" : data[1].productId, "name" : data[1].name},{"product_id" : data[4].productId, "name" : data[4].name}], //do checkout as well
     "buyout" : true,
@@ -136,6 +143,7 @@ userTask[4].session1.push({
 
 userTask[4].session2.push({
     "login" : {username: userTask[4].username, password : userTask[4].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[3].productId, "name" : data[3].name},{"product_id" : data[5].productId, "name" : data[5].name},{"product_id" : data[9].productId, "name" : data[9].name}],
     "addtoCart" : [{"product_id" : data[5].productId, "name" : data[5].name}], //do checkout as well
     "buyout" : false,
@@ -144,6 +152,7 @@ userTask[4].session2.push({
 
 userTask[4].session3.push({
     "login" : {username: userTask[4].username, password : userTask[4].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[3].productId, "name" : data[3].name},{"product_id" : data[8].productId, "name" : data[8].name}],
     "addtoCart" : [{"product_id" : data[8].productId, "name" : data[8].name}], //do checkout as well
     "buyout" : true,
@@ -152,6 +161,7 @@ userTask[4].session3.push({
 
 userTask[4].session4.push({
     "login" : {username: userTask[4].username, password : userTask[4].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[1].productId, "name" : data[1].name}],
     "addtoCart" : [], //do checkout as well
     "buyout" : false,
@@ -160,6 +170,7 @@ userTask[4].session4.push({
 
 userTask[2].session1.push({
     "login" : {username: userTask[2].username, password : userTask[2].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[0].productId, "name" : data[0].name}],
     "addtoCart" : [{"product_id" : data[0].productId, "name" : data[0].name}], //do checkout as well
     "buyout" : true,
@@ -168,6 +179,7 @@ userTask[2].session1.push({
 
 userTask[2].session2.push({
     "login" : {username: userTask[2].username, password : userTask[2].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[2].productId, "name" : data[2].name},{"product_id" : data[4].productId, "name" : data[4].name}, {"product_id" : data[5].productId, "name" : data[5].name}, {"product_id" : data[6].productId, "name" : data[6].name}],
     "addtoCart" : [{"product_id" : data[4].productId, "name" : data[4].name}, {"product_id" : data[2].productId, "name" : data[2].name}],
     "buyout" : true,
@@ -175,6 +187,7 @@ userTask[2].session2.push({
 })
 userTask[2].session3.push({
     "login" : {username: userTask[2].username, password : userTask[2].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[2].productId, "name" : data[2].name},{"product_id" : data[0].productId, "name" : data[0].name}],
     "addtoCart" : [{"product_id" : data[0].productId, "name" : data[0].name}],
     "buyout" : true,
@@ -182,6 +195,7 @@ userTask[2].session3.push({
 })
 userTask[2].session4.push({
     "login" : {username: userTask[2].username, password : userTask[2].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[11].productId, "name" : data[11].name},{"product_id" : data[8].productId, "name" : data[8].name}, {"product_id" : data[9].productId, "name" : data[9].name}, {"product_id" : data[6].productId, "name" : data[6].name},{"product_id" : data[10].productId, "name" : data[10].name}, {"product_id" : data[0].productId, "name" : data[0].name}],
     "addtoCart" : [{"product_id" : data[6].productId, "name" : data[6].name}],
     "buyout" : true,
@@ -191,6 +205,7 @@ userTask[2].session4.push({
 
 userTask[3].session1.push({
     "login" : {username: userTask[2].username, password : userTask[2].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[2].productId, "name" : data[2].name},{"product_id" : data[0].productId, "name" : data[0].name}],
     "addtoCart" : [{"product_id" : data[2].productId, "name" : data[2].name},{"product_id" : data[0].productId, "name" : data[0].name}],
     "buyout" : true,
@@ -199,6 +214,7 @@ userTask[3].session1.push({
 
 userTask[3].session2.push({
     "login" : {username: userTask[2].username, password : userTask[2].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[0].productId, "name" : data[0].name},{"product_id" : data[2].productId, "name" : data[2].name}],
     "addtoCart" : [{"product_id" : data[2].productId, "name" : data[2].name}],
     "buyout" : true,
@@ -206,6 +222,7 @@ userTask[3].session2.push({
 })
 userTask[3].session3.push({
     "login" : {username: userTask[2].username, password : userTask[2].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[9].productId, "name" : data[9].name},{"product_id" : data[0].productId, "name" : data[0].name}],
     "addtoCart" : [{"product_id" : data[9].productId, "name" : data[9].name}],
     "buyout": true,
@@ -213,6 +230,7 @@ userTask[3].session3.push({
 })
 userTask[3].session4.push({
     "login" : {username: userTask[2].username, password : userTask[2].password},
+    "region" : {address: "India", country: "India", state: "Maharashtra", city: "Mumbai"},
     //"view" : [{"product_id" : data[11].productId, "name" : data[11].name},{"product_id" : data[8].productId, "name" : data[8].name}, {"product_id" : data[9].productId, "name" : data[9].name}, {"product_id" : data[6].productId, "name" : data[6].name},{"product_id" : data[10].productId, "name" : data[10].name}, {"product_id" : data[0].productId, "name" : data[0].name}],
     "addtoCart" : [{"product_id" : data[9].productId, "name" : data[9].name}],
     "buyout" : true,
