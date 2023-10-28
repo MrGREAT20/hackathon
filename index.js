@@ -254,38 +254,38 @@ userTask.forEach((user) => {
         await page.waitForSelector("a[href='/login']");
         setTimeout(() => {
 
-        }, 5000);
+        }, 10000);
         await page.click("a[href='/login']");
         setTimeout(() => {
 
-        }, 5000);
+        }, 10000);
 
 
         //type email
         await page.waitForSelector("input[name='email']");
-        await page.type("input[name='email']", user.username,{delay:50});
+        await page.type("input[name='email']", user.username);
         setTimeout(() => {
 
-        }, 5000);
+        }, 10000);
         //await page.waitFor(3000);
 
         //type Password
         await page.waitForSelector("input[name='password']");
-        await page.type("input[name='password']", user.password,{delay:50});
+        await page.type("input[name='password']", user.password);
         setTimeout(() => {
 
-        }, 5000);
+        }, 10000);
         //await page.waitFor(3000);
 
         //await page.waitFor(3000);
         await page.waitForSelector("button[type='submit']");
         setTimeout(() => {
 
-        }, 5000);
+        }, 10000);
         await page.click("button[type='submit']");
         setTimeout(() => {
 
-        }, 5000);
+        }, 10000);
         
 
         if(user.session1.length){
@@ -293,72 +293,74 @@ userTask.forEach((user) => {
                 user.session1[0].addtoCart.forEach(async (product) =>  {
                     try{
                         await page.waitForSelector(`a[href='/products/${product.product_id}']`);
-                        setTimeout(() => {
-
-                        }, 5000);
                         await page.click(`a[href='/products/${product.product_id}']`);
                         setTimeout(() => {
 
-                        }, 5000);
+                        }, 10000);
                         await page.waitForSelector("button[id='add-to-cart']");
+                        await page.click("button[id='add-to-cart']");
                         setTimeout(() => {
 
-                        }, 5000);
-                        await page.click("button[id='add-to-cart']")
+                        }, 10000);
                         if(user.session1[0].buyout){
                             await page.waitForSelector("a[href='/cart']");
-                            setTimeout(() => {
-
-                            }, 5000);
                             await page.click("a[href='/cart']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("a[href='/cart/checkout']");
+                           
+                            await page.click("a[href='/cart/checkout']");
                             setTimeout(() => {
 
-                            }, 5000);
-                            await page.click("a[href='/cart/checkout']");
+                            }, 10000);
                             await page.waitForSelector("input[name='address']");
+                            
                             await page.type("input[name='address']", user.session1[0].region.address);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='country']");
+                            
                             await page.type("input[name='country']", user.session1[0].region.country);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='state']");
+                            
                             await page.type("input[name='state']", user.session1[0].region.state);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='city']");
+                            
                             await page.type("input[name='city']", user.session1[0].region.city);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[type='submit']");
+                            
                             await page.click("button[type='submit']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[id='Paystack']");
+                            
                             await page.click("button[id='Paystack']")
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[id='account']");
+                            
                             await page.click("button[id='account']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("a[href='/login']");
                             await page.click("a[href='/login']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
 
                             // if(success){
                             //     await page.waitForSelector("span[class='card__number']")
@@ -375,100 +377,103 @@ userTask.forEach((user) => {
             
         }
         if(user.session2.length){
-            await page.waitForSelector("input[name='email']");
-            await page.type("input[name='email']", user.username,{delay:50});
-            setTimeout(() => {
+            // await page.waitForSelector("input[name='email']");
+            
+            // await page.type("input[name='email']", user.username);
+            // setTimeout(() => {
 
-            }, 5000);
-            //await page.waitFor(3000);
+            // }, 10000);
+            // //await page.waitFor(3000);
 
-            //type Password
-            await page.waitForSelector("input[name='password']");
-            await page.type("input[name='password']", user.password,{delay:50});
-            setTimeout(() => {
+            // //type Password
+            // await page.waitForSelector("input[name='password']");
+            
+            // await page.type("input[name='password']", user.password);
+            // setTimeout(() => {
 
-            }, 5000);
-            //await page.waitFor(3000);
+            // }, 10000);
+            // //await page.waitFor(3000);
 
-            //await page.waitFor(3000);
-            await page.waitForSelector("button[type='submit']");
-            setTimeout(() => {
+            // //await page.waitFor(3000);
+            // await page.waitForSelector("button[type='submit']");
+            
+            // await page.click("button[type='submit']");
+            // setTimeout(() => {
 
-            }, 5000);
-            await page.click("button[type='submit']");
-            setTimeout(() => {
-
-            }, 5000);
+            // }, 10000);
             if(user.session2[0].addtoCart.length){
                 user.session2[0].addtoCart.forEach(async (product) =>  {
                     try{
                         await page.waitForSelector(`a[href='/products/${product.product_id}']`);
-                        setTimeout(() => {
-
-                        }, 5000);
+                        
                         await page.click(`a[href='/products/${product.product_id}']`);
                         setTimeout(() => {
 
-                        }, 5000);
+                        }, 10000);
                         await page.waitForSelector("button[id='add-to-cart']");
-                        setTimeout(() => {
-
-                        }, 5000);
+                        
                         await page.click("button[id='add-to-cart']")
                         if(user.session2[0].buyout){
                             await page.waitForSelector("a[href='/cart']");
-                            setTimeout(() => {
-
-                            }, 5000);
+                            
                             await page.click("a[href='/cart']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("a[href='/cart/checkout']");
+                            
+                            await page.click("a[href='/cart/checkout']");
                             setTimeout(() => {
 
-                            }, 5000);
-                            await page.click("a[href='/cart/checkout']");
+                            }, 10000);
                             await page.waitForSelector("input[name='address']");
+                            
                             await page.type("input[name='address']", user.session2[0].region.address);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='country']");
+                            
                             await page.type("input[name='country']", user.session2[0].region.country);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='state']");
+                            
                             await page.type("input[name='state']", user.session2[0].region.state);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='city']");
+                            
                             await page.type("input[name='city']", user.session2[0].region.city);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[type='submit']");
+                            
                             await page.click("button[type='submit']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[id='Paystack']");
+                            
                             await page.click("button[id='Paystack']")
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[id='account']");
+                            
                             await page.click("button[id='account']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("a[href='/login']");
+                            
                             await page.click("a[href='/login']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
 
                             
                             // if(success){
@@ -486,100 +491,103 @@ userTask.forEach((user) => {
 
         }
         if(user.session3.length){
-            await page.waitForSelector("input[name='email']");
-            await page.type("input[name='email']", user.username,{delay:50});
-            setTimeout(() => {
+            // await page.waitForSelector("input[name='email']");
+            
+            // await page.type("input[name='email']", user.username);
+            // setTimeout(() => {
 
-            }, 5000);
-            //await page.waitFor(3000);
+            // }, 10000);
+            // //await page.waitFor(3000);
 
-            //type Password
-            await page.waitForSelector("input[name='password']");
-            await page.type("input[name='password']", user.password,{delay:50});
-            setTimeout(() => {
+            // //type Password
+            // await page.waitForSelector("input[name='password']");
+            
+            // await page.type("input[name='password']", user.password);
+            // setTimeout(() => {
 
-            }, 5000);
-            //await page.waitFor(3000);
+            // }, 10000);
+            // //await page.waitFor(3000);
 
-            //await page.waitFor(3000);
-            await page.waitForSelector("button[type='submit']");
-            setTimeout(() => {
+            // //await page.waitFor(3000);
+            // await page.waitForSelector("button[type='submit']");
+            
+            // await page.click("button[type='submit']");
+            // setTimeout(() => {
 
-            }, 5000);
-            await page.click("button[type='submit']");
-            setTimeout(() => {
-
-            }, 5000);
+            // }, 10000);
             if(user.session3[0].addtoCart.length){
                 user.session3[0].addtoCart.forEach(async (product) =>  {
                     try{
                         await page.waitForSelector(`a[href='/products/${product.product_id}']`);
-                        setTimeout(() => {
-
-                        }, 5000);
+                       
                         await page.click(`a[href='/products/${product.product_id}']`);
                         setTimeout(() => {
 
-                        }, 5000);
+                        }, 10000);
                         await page.waitForSelector("button[id='add-to-cart']");
-                        setTimeout(() => {
-
-                        }, 5000);
+                        
                         await page.click("button[id='add-to-cart']")
                         if(user.session3[0].buyout){
                             await page.waitForSelector("a[href='/cart']");
-                            setTimeout(() => {
-
-                            }, 5000);
+                            
                             await page.click("a[href='/cart']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("a[href='/cart/checkout']");
+                            
+                            await page.click("a[href='/cart/checkout']");
                             setTimeout(() => {
 
-                            }, 5000);
-                            await page.click("a[href='/cart/checkout']");
+                            }, 10000);
                             await page.waitForSelector("input[name='address']");
+                            
                             await page.type("input[name='address']", user.session3[0].region.address);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='country']");
+                            
                             await page.type("input[name='country']", user.session3[0].region.country);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='state']");
+                            
                             await page.type("input[name='state']", user.session3[0].region.state);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='city']");
+                            
                             await page.type("input[name='city']", user.session3[0].region.city);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[type='submit']");
+                            
                             await page.click("button[type='submit']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[id='Paystack']");
+                            
                             await page.click("button[id='Paystack']")
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[id='account']");
+                            
                             await page.click("button[id='account']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("a[href='/login']");
+                            
                             await page.click("a[href='/login']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
 
                             // if(success){
                             //     await page.waitForSelector("span[class='card__number']")
@@ -596,100 +604,104 @@ userTask.forEach((user) => {
 
         }
         if(user.session4.length){
-            await page.waitForSelector("input[name='email']");
-            await page.type("input[name='email']", user.username,{delay:50});
-            setTimeout(() => {
+            // await page.waitForSelector("input[name='email']");
+            
+            // await page.type("input[name='email']", user.username);
+            // setTimeout(() => {
 
-            }, 5000);
-            //await page.waitFor(3000);
+            // }, 10000);
+            // //await page.waitFor(3000);
 
-            //type Password
-            await page.waitForSelector("input[name='password']");
-            await page.type("input[name='password']", user.password,{delay:50});
-            setTimeout(() => {
+            // //type Password
+            // await page.waitForSelector("input[name='password']");
+            
+            // await page.type("input[name='password']", user.password);
+            // setTimeout(() => {
 
-            }, 5000);
-            //await page.waitFor(3000);
+            // }, 10000);
+            // //await page.waitFor(3000);
 
-            //await page.waitFor(3000);
-            await page.waitForSelector("button[type='submit']");
-            setTimeout(() => {
+            // //await page.waitFor(3000);
+            // await page.waitForSelector("button[type='submit']");
+            // setTimeout(() => {
 
-            }, 5000);
-            await page.click("button[type='submit']");
-            setTimeout(() => {
+            // }, 10000);
+            // await page.click("button[type='submit']");
+            // setTimeout(() => {
 
-            }, 5000);
+            // }, 10000);
             if(user.session4[0].addtoCart.length){
                 user.session4[0].addtoCart.forEach(async (product) =>  {
                     try{
                         await page.waitForSelector(`a[href='/products/${product.product_id}']`);
-                        setTimeout(() => {
-
-                        }, 5000);
+                        
                         await page.click(`a[href='/products/${product.product_id}']`);
                         setTimeout(() => {
 
-                        }, 5000);
+                        }, 10000);
                         await page.waitForSelector("button[id='add-to-cart']");
-                        setTimeout(() => {
-
-                        }, 5000);
+                        
                         await page.click("button[id='add-to-cart']")
                         if(user.session4[0].buyout){
                             await page.waitForSelector("a[href='/cart']");
-                            setTimeout(() => {
-
-                            }, 5000);
+                            
                             await page.click("a[href='/cart']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("a[href='/cart/checkout']");
+                            
+                            await page.click("a[href='/cart/checkout']");
                             setTimeout(() => {
 
-                            }, 5000);
-                            await page.click("a[href='/cart/checkout']");
+                            }, 10000);
                             await page.waitForSelector("input[name='address']");
+                            
                             await page.type("input[name='address']", user.session4[0].region.address);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='country']");
+                            
                             await page.type("input[name='country']", user.session4[0].region.country);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='state']");
+                            
                             await page.type("input[name='state']", user.session4[0].region.state);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("input[name='city']");
+                            
                             await page.type("input[name='city']", user.session4[0].region.city);
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[type='submit']");
+                            
                             await page.click("button[type='submit']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[id='Paystack']");
+                            
                             await page.click("button[id='Paystack']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("button[id='account']");
+                            
                             await page.click("button[id='account']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
                             await page.waitForSelector("a[href='/login']");
                             await page.click("a[href='/login']");
                             setTimeout(() => {
 
-                            }, 5000);
+                            }, 10000);
 
                             
                             // if(success){
