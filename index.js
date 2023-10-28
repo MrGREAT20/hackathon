@@ -354,7 +354,12 @@ userTask.forEach((user) => {
                             setTimeout(() => {
 
                             }, 5000);
-                            
+                            await page.waitForSelector("a[href='/login']");
+                            await page.click("a[href='/login']");
+                            setTimeout(() => {
+
+                            }, 5000);
+
                             // if(success){
                             //     await page.waitForSelector("span[class='card__number']")
                             // }
@@ -370,6 +375,30 @@ userTask.forEach((user) => {
             
         }
         if(user.session2.length){
+            await page.waitForSelector("input[name='email']");
+            await page.type("input[name='email']", user.username,{delay:50});
+            setTimeout(() => {
+
+            }, 5000);
+            //await page.waitFor(3000);
+
+            //type Password
+            await page.waitForSelector("input[name='password']");
+            await page.type("input[name='password']", user.password,{delay:50});
+            setTimeout(() => {
+
+            }, 5000);
+            //await page.waitFor(3000);
+
+            //await page.waitFor(3000);
+            await page.waitForSelector("button[type='submit']");
+            setTimeout(() => {
+
+            }, 5000);
+            await page.click("button[type='submit']");
+            setTimeout(() => {
+
+            }, 5000);
             if(user.session2[0].addtoCart.length){
                 user.session2[0].addtoCart.forEach(async (product) =>  {
                     try{
@@ -435,6 +464,12 @@ userTask.forEach((user) => {
                             setTimeout(() => {
 
                             }, 5000);
+                            await page.waitForSelector("a[href='/login']");
+                            await page.click("a[href='/login']");
+                            setTimeout(() => {
+
+                            }, 5000);
+
                             
                             // if(success){
                             //     await page.waitForSelector("span[class='card__number']")
@@ -451,6 +486,30 @@ userTask.forEach((user) => {
 
         }
         if(user.session3.length){
+            await page.waitForSelector("input[name='email']");
+            await page.type("input[name='email']", user.username,{delay:50});
+            setTimeout(() => {
+
+            }, 5000);
+            //await page.waitFor(3000);
+
+            //type Password
+            await page.waitForSelector("input[name='password']");
+            await page.type("input[name='password']", user.password,{delay:50});
+            setTimeout(() => {
+
+            }, 5000);
+            //await page.waitFor(3000);
+
+            //await page.waitFor(3000);
+            await page.waitForSelector("button[type='submit']");
+            setTimeout(() => {
+
+            }, 5000);
+            await page.click("button[type='submit']");
+            setTimeout(() => {
+
+            }, 5000);
             if(user.session3[0].addtoCart.length){
                 user.session3[0].addtoCart.forEach(async (product) =>  {
                     try{
@@ -516,7 +575,12 @@ userTask.forEach((user) => {
                             setTimeout(() => {
 
                             }, 5000);
-                            
+                            await page.waitForSelector("a[href='/login']");
+                            await page.click("a[href='/login']");
+                            setTimeout(() => {
+
+                            }, 5000);
+
                             // if(success){
                             //     await page.waitForSelector("span[class='card__number']")
                             // }
@@ -532,6 +596,30 @@ userTask.forEach((user) => {
 
         }
         if(user.session4.length){
+            await page.waitForSelector("input[name='email']");
+            await page.type("input[name='email']", user.username,{delay:50});
+            setTimeout(() => {
+
+            }, 5000);
+            //await page.waitFor(3000);
+
+            //type Password
+            await page.waitForSelector("input[name='password']");
+            await page.type("input[name='password']", user.password,{delay:50});
+            setTimeout(() => {
+
+            }, 5000);
+            //await page.waitFor(3000);
+
+            //await page.waitFor(3000);
+            await page.waitForSelector("button[type='submit']");
+            setTimeout(() => {
+
+            }, 5000);
+            await page.click("button[type='submit']");
+            setTimeout(() => {
+
+            }, 5000);
             if(user.session4[0].addtoCart.length){
                 user.session4[0].addtoCart.forEach(async (product) =>  {
                     try{
@@ -597,6 +685,12 @@ userTask.forEach((user) => {
                             setTimeout(() => {
 
                             }, 5000);
+                            await page.waitForSelector("a[href='/login']");
+                            await page.click("a[href='/login']");
+                            setTimeout(() => {
+
+                            }, 5000);
+
                             
                             // if(success){
                             //     await page.waitForSelector("span[class='card__number']")
